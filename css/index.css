@@ -1,0 +1,44 @@
+
+.commentaires-utilisateurs {
+    /* Styles pour les commentaires des utilisateurs */
+}
+.liens-stylises {
+    /* Styles pour les liens stylisés */
+}
+
+.lien1,.lien2,.lien3 {
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le div */
+    background-position: center; /* Position de l'image centree */
+    background-repeat: no-repeat; 
+
+    color: #ffffff;
+    text-shadow: #333 1px 0 10px;
+
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.lien:link {    
+    text-decoration: none;
+}
+
+
+.lien1 {
+    background-image: url('../images/mairie.jpg');
+}
+
+
+.lien2 {
+    background-image: url('../images/plage.jpg');
+}
+
+
+.lien3 {
+    background-image: url('../images/flotille.jpg');
+}
+
+.avis {
+    border: solid #333;
+    margin: 10px;
+    display: flex;
+}
