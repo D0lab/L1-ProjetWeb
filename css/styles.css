@@ -32,6 +32,8 @@ body{
     padding: 0;
 
     overflow-x: hidden;
+
+    z-index: 0;
 }
 
 footer {
@@ -39,6 +41,8 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+
+    z-index: 10;
 }
 
 
@@ -54,6 +58,9 @@ header{
     left:0;
     right:0;
     top:0;
+
+    
+    z-index: 20;
 }
 
 header > h1{
