@@ -1,4 +1,12 @@
 
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+
+
 .commentaires-utilisateurs {
     /* Styles pour les commentaires des utilisateurs */
 }
@@ -10,15 +18,22 @@
     background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le div */
     background-position: center; /* Position de l'image centree */
     background-repeat: no-repeat; 
-    color: #fff;
+
+    color: #ffffff;
+    text-shadow: #333 1px 0 10px;
+
     text-align: center;
     padding: 100px 20px;
+}
+
+.lien1:hover,.lien2:hover,.lien3:hover {
+    color: #333;
+    text-shadow: #ffffff 1px 0 10px;
 }
 
 .lien:link {    
     text-decoration: none;
 }
-
 
 .lien1 {
     background-image: url('../images/mairie.jpg');
@@ -35,5 +50,7 @@
 }
 
 .avis {
-    border: solid pink;
+    border: solid #333;
+    margin: 10px;
+    display: flex;
 }
