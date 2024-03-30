@@ -111,25 +111,27 @@ ul.menu li.menu a.menu {
 
 
 
-@media(max-width: 750px) {
+@media(max-width : 750px){
     ul.menu {
         flex-direction: column;
         position: fixed;
-        top: 0;
-        right: -100%; /* masquer le menu par défaut */
+        right: -200%; /* masquer le menu par défaut */
         background-color: #333;
         width: 100vw; /* largeur de la fenêtre */
-        transition: right 0.3s ease; /* ajouter une transition pour une animation fluide */
+        transition: bottom 0.3s ease; /* ajouter une transition pour une animation fluide */
     }
 
-    /* styles pour les éléments du menu restant */
-    header > nav {
-        flex: 7;
-        position: relative; /* annuler position: absolute; */
+    header > nav{
+        flex:7;
     }
 
-    .nav-open,
-    .nav-close {
+    section{
+        flex-direction: column;
+        
+    }
+
+
+    .nav-open, .nav-close {
         position: absolute;
         top: 8px;
         right: 15px;
@@ -138,27 +140,34 @@ ul.menu li.menu a.menu {
         font-size: 2em;
     }
 
-    .nav-open {
+
+    .nav-open{
         display: block;
     }
 
-    .nav-close {
+    .nav-close{
         display: none;
     }
 
-    #contenu:target .nav-close {
+
+    #contenu:target .nav-close{
         display: block;
     }
 
-    #contenu:target .nav-open {
+    #contenu:target .nav-open{
         display: none;
     }
 
-    #contenu:target ul.menu {
-        right: 0;
+    #contenu:target ul.menu{
+        right: 0px;
+        top: 39px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
     }
+
 }
-
 
 
 @media(min-width : 750px){
