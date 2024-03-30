@@ -115,10 +115,9 @@ ul.menu li.menu a.menu {
     ul.menu {
         flex-direction: column;
         position: fixed;
-        right: -200%; /* masquer le menu par défaut */
+        right: -200%; 
         background-color: #333;
-        width: 100vw; /* largeur de la fenêtre */
-        transition: bottom 0.3s ease; /* ajouter une transition pour une animation fluide */
+        width: 100vw; 
     }
 
     header > nav{
