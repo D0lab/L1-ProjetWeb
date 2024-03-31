@@ -1,0 +1,79 @@
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+
+.carte {
+    max-width: 800px; /* Taille maximale pour l'iframe */
+    margin: 0 auto; /* Pour centrer l'élément horizontalement */
+}
+
+.carte iframe {
+    width: 100%; /* Pour occuper toute la largeur disponible dans le conteneur */
+    height: 500px; /* Taille moyenne de l'iframe, ajustez selon vos besoins */
+    display: block; 
+    margin: 0 auto;
+}
+@media (max-width: 992px) {
+    .carte iframe {
+        height: 300px;
+    }
+}
+
+/* Ajustements pour les écrans de petite taille (téléphones) */
+@media (max-width: 576px) {
+    .carte iframe {
+        height: 200px;
+    }
+}
+  
+
+.commentaires-utilisateurs {
+    /* Styles pour les commentaires des utilisateurs */
+}
+.liens-stylises {
+    /* Styles pour les liens stylisés */
+}
+
+.lien1,.lien2,.lien3 {
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le div */
+    background-position: center; /* Position de l'image centree */
+    background-repeat: no-repeat; 
+
+    color: #ffffff;
+    text-shadow: #333 1px 0 10px;
+
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.lien1:hover,.lien2:hover,.lien3:hover {
+    color: #333;
+    text-shadow: #ffffff 1px 0 10px;
+}
+
+.lien:link {    
+    text-decoration: none;
+}
+
+.lien1 {
+    background-image: url('../images/mairie.jpg');
+}
+
+
+.lien2 {
+    background-image: url('../images/plage.jpg');
+}
+
+
+.lien3 {
+    background-image: url('../images/resto.jpg');
+}
+
+.avis {
+    margin: 10px;
+    display: flex;
+}
