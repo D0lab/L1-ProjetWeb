@@ -14,13 +14,13 @@ main>h1 {
   text-align: center;
 }
 
-a.timeline:link {
+a:link {
     color: #333;
     text-decoration: none;
 
 }
 
-a.timeline:hover {
+a:hover {
     color: orange;
 }
 
