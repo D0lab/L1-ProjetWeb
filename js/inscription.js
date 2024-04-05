@@ -1,3 +1,8 @@
+function togg() {
+	d1.style.display = "none";
+	d2.style.display = "block";
+}
+
 function sendMail(params){
 	var tempParams={
 		nom:document.getElementById("nom").value,
@@ -5,6 +10,8 @@ function sendMail(params){
 		date_naissance:document.getElementById("date_naissance").value
         
 	};
+
+	togg();	
     
 	emailjs.send('service_i3bxhot',"template_212vqb8",tempParams)
 	emailjs.send('service_i3bxhot',"template_4ohvhyc",tempParams)
