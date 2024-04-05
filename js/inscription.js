@@ -1,3 +1,8 @@
+let d1 = document.getElementById("d1");
+d1.style.display = "block";
+let d2 = document.getElementById("d2");
+d2.style.display = "none";
+
 function togg() {
 	d1.style.display = "none";
 	d2.style.display = "block";
