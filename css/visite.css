@@ -14,13 +14,13 @@ main>h1 {
   text-align: center;
 }
 
-a:link {
+main a:link {
     color: #333;
     text-decoration: none;
 
 }
 
-a:hover {
+main a:hover {
     color: orange;
 }
 
