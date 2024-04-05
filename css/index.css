@@ -69,16 +69,44 @@ section {
 /* Styles généraux pour les avis */
 .avis {
     display: flex;
-    border: solid #333;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avis-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
 }
 
 .avis_image {
-    clip-path:ellipse(50% 50%);
-    margin: 100px;   
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
 }
 
-.etoiles {
-    width: 2%;
-    height: 2%;
+.avis-content {
+    flex-grow: 1;
+}
+
+.avis-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.etoiles img {
+    height: 16px;
+    width: 16px;
+}
+
+.avis-content p {
+    margin: 0;
+    color: #333;
 }
 
