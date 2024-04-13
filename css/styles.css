@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Kluvka';
+    src: url('./fonts/Klukva_version_01.otf');
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    z-index: 0;
+}
+
+/* Styles for the header */
+header {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Change from center to space-between */
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    font-family: 'Kluva';
+}
+
+/* Styles for the logo image */
+header img {
+    width: 100px;
+    padding: 10px 20px; /* Add padding to the left and right */
+}
+
+/* Styles for the navigation menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul.menu {
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul.menu li.menu {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul.menu li.menu:nth-child(-n+4) {
+    border-right: 1px solid #999;
+}
+
+nav ul.menu li.menu a.menu {
+    text-decoration: none;
+    color: #ffffff; /* Modifier la couleur en blanc */
+    font-size: 25px;
+}
+
+
+
+a.menu:hover {
+    color: #ffffff; /* Modifier la couleur en blanc */
+}
+
+a.menu:active {
+    color: #ffffff; /* Modifier la couleur en blanc */
+}
+
+/* Styles for the main content */
+main {
+    font-family: 'Kluva';
+    flex-grow: 1;
+}
+
+/* Styles for the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    flex-shrink: 0;
+    font-family: 'Kluva';
+}
+
+footer a {
+    color : #0A58CA !important ;
+}
+
+
+a:visited  {
+    color : inherit;
+}
+
+/* Styles for the wrapper */
+.wrapper {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive styles */
+@media (max-width: 750px) {
+    ul.menu {
+        flex-direction: column;
+        position: fixed;
+        right: -200%;
+        background-color: #333;
+        width: 100vw;
+    }
+
+    header > nav {
+        flex: 7;
+    }
+
+    section {
+        flex-direction: column;        
+    }
+
+    .nav-open,
+    .nav-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    .nav-open {
+        display: block;
+    }
+
+    .nav-close {
+        display: none;
+    }
+
+    #contenu:target .nav-close {
+        display: block;
+    }
+
+    #contenu:target .nav-open {
+        display: none;
+    }
+
+    #contenu:target ul.menu {
+        right: 0px;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media (min-width: 750px) {
+    .nav-open,
+    .nav-close {
+        display: none;
+    }
+
+    header > nav {
+        position: relative;
+    }
+}

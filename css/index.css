@@ -1,0 +1,134 @@
+.bandeau {
+    background-image: url('../images/foret.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333;
+    text-align: center;
+    padding: 100px 20px;
+    height: 300px; /* Default height for larger screens */
+    max-height: 100%; /* Maximum height relative to the viewport height */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .bandeau {
+        padding: 50px 10px; /* Decrease padding for smaller screens */
+        height: 200px; /* Adjusted height for smaller screens */
+    }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 480px) {
+    .bandeau {
+        padding: 30px 5px; /* Further decrease padding for very small screens */
+        height: 150px; /* Further adjusted height for very small screens */
+    }
+}
+
+
+.carte {
+    max-width: 800px; /* Taille maximale pour l'iframe */
+    margin: 0 auto; /* Pour centrer l'élément horizontalement */
+}
+
+.carte iframe {
+    width: 100%; /* Pour occuper toute la largeur disponible dans le conteneur */
+    height: 500px; /* Taille moyenne de l'iframe, ajustez selon vos besoins */
+    display: block; 
+    margin: 0 auto;
+}
+@media (max-width: 992px) {
+    .carte iframe {
+        height: 300px;
+    }
+}
+
+/* Ajustements pour les écrans de petite taille (téléphones) */
+@media (max-width: 576px) {
+    .carte iframe {
+        height: 200px;
+    }
+}
+  
+
+.lien1,.lien2,.lien3 {
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le div */
+    background-position: center; /* Position de l'image centree */
+    background-repeat: no-repeat; 
+
+    color: #ffffff;
+    text-shadow: #333 1px 0 10px;
+
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.lien1:hover,.lien2:hover,.lien3:hover {
+    color: #333;
+    text-shadow: #ffffff 1px 0 10px;
+}
+
+.lien:link {    
+    text-decoration: none;
+}
+
+.lien1 {
+    background-image: url('../images/mairie.jpg');
+}
+
+
+.lien2 {
+    background-image: url('../images/plage.jpg');
+}
+
+
+.lien3 {
+    background-image: url('../images/resto.jpg');
+}
+
+/* Styles généraux pour les avis */
+.avis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avis-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.avis_image {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.avis-content {
+    flex-grow: 1;
+}
+
+.avis-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.etoiles img {
+    height: 16px;
+    width: 16px;
+}
+
+.avis-content p {
+    margin: 0;
+    color: #333;
+}
+
