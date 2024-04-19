@@ -13,14 +13,20 @@
 }
 
 
+.wrapper {
+  height: 100vh;
+  text-align: center;
+}
+
 .scene {
   display: inline-block;
   width: 220px;
   height: 300px;
-/*   border: 1px solid #CCC; */
-  margin: 40px 0 ;
+  margin: 40px; /* Vous pouvez ajuster la marge selon vos besoins */
   perspective: 600px;
 }
+
+
 
 .card {
   position: relative;
@@ -34,7 +40,8 @@
 
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: transform 1s;
+  transition: transform 1s, box-shadow 1s; /* Ajoutez box-shadow à la transition */
+  box-shadow: 10px 10px 5px black; /
 }
 
 .card.is-flipped {
