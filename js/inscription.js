@@ -12,7 +12,8 @@ function sendMail(params){
 	var tempParams={
 		nom:document.getElementById("nom").value,
 		mail_utilisateur:document.getElementById("mail_utilisateur").value,
-		date_naissance:document.getElementById("date_naissance").value
+		date_naissance:document.getElementById("date_naissance").value,
+		mdp:document.getElementById("mdp").value
         
 	};
 

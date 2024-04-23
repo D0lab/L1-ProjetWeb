@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soustons - Inscription</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/inscription.css">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300italic">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="../images/icones/logo_b.png">
@@ -41,28 +42,31 @@
 
             
             <section>
-                <center>
+                <div class="formulaire_inscription">
                     <H1>INSCRIPTION</H1>
+                        
+                        
+                    <div id="d1">
+                    </br>
+                    <form name="inscription" action="javascript:sendMail();">
+                        <input type="text" id ="nom" name="nom" placeholder="Prénom Nom" size="35" style="height:35px" maxlength="36" required>
+                    </br></br>
+                        <input type="text" id ="mail_utilisateur" name="mail_utilisateur" placeholder="Adresse Mail" size="35" style="height:35px" maxlength="36" required>
+                    </br></br>            
+                        <input type="password" id ="mdp" name="mdp" placeholder="Mot De Passe" size="35" style="height:35px" maxlength="36" required>
+                    </br></br>      
+                        <label for="date_naissance">DATE DE NAISSANCE :</label>            
+                        <input type="date" id ="date_naissance" name="date_naissance" placeholder="Date De Naissance" size="10%" style="height:35px" maxlength="4" required>
+                    </br></br></br>
+                        <input type="submit" style="height:35px">
                     
+                    </form>
+                    </div>
                     
-                <div id="d1">
-                </br>
-                <form name="inscription" action="javascript:sendMail();">
-                    <input type="text" id ="nom" name="nom" placeholder="Prénom Nom" size="35" style="height:35px" maxlength="36" required>
-                </br></br>
-                    <input type="text" id ="mail_utilisateur" name="mail_utilisateur" placeholder="Adresse Mail" size="35" style="height:35px" maxlength="36" required>
-                </br></br>      
-                    <label for="date_naissance">DATE DE NAISSANCE :</label>            
-                    <input type="date" id ="date_naissance" name="date_naissance" placeholder="Date De Naissance" size="10%" style="height:35px" maxlength="4" required>
-                </br></br></br>
-                    <input type="submit" style="height:35px">
-                
-                </form>
-                </div>
-                
-                <div id="d2">
-                </br>
-                    <H2>EN COURS !</H2>
+                    <div id="d2">
+                    </br>
+                        <H2>EN COURS !</H2>
+                    </div>
                 </div>
             </section>
         </main>
