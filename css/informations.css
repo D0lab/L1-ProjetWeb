@@ -20,11 +20,11 @@ li {
 }
 
 main a {
-    color:orange !important;
+    color:red !important;
 }
 
 main a:hover {
-    color:red !important;
+    color:orange !important;
 }
 
 main a:visited {
