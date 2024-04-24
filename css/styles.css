@@ -111,6 +111,7 @@ a:visited  {
     min-height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Add this line to prevent content from overflowing */
 }
 
 /* Responsive styles */

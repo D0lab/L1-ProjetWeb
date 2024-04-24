@@ -14,10 +14,17 @@
 
 
 
+main {
+  font-family: 'Kluva';
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
+}
+
 .wrapper {
-  height: 100vh;
   text-align: center;
 }
+
 
 .scene {
   display: inline-block;
@@ -25,16 +32,11 @@
   height: 300px;
   margin: 40px; 
   perspective: 600px;
+
 }
 
 
-main {
-  overflow-y: auto; 
-}
 
-footer{
-  margin-top: 0;
-}
 
 
 
