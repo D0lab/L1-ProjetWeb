@@ -14,6 +14,10 @@ li {
     margin: 0 0 3% 2%;
 }
 
+.nom_page {
+    text-decoration: none;
+    color : inherit !important;
+}
 
 main a {
     color:orange !important;
