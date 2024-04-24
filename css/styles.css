@@ -80,6 +80,7 @@ a.menu:active {
 main {
     font-family: 'Kluva';
     flex-grow: 1;
+    width: 100%;
 }
 
 /* Styles for the footer */
