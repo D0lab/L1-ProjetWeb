@@ -1,0 +1,39 @@
+main {
+    font-size: 20px;
+}
+
+img {
+    width : 20%;
+}
+
+li {
+    font-size: 20px;
+}
+
+.page {
+    margin: 0 0 3% 2%;
+}
+
+
+main a {
+    color:orange !important;
+}
+
+main a:hover {
+    color:red !important;
+}
+
+main a:visited {
+    color:inherit;
+}
+
+section {
+    background-color: #D3D3D3;
+}
+
+.kdo {
+    background-image: linear-gradient(to left, indigo, blue, green, orange, red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
