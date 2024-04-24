@@ -13,7 +13,10 @@
     padding: 100px 20px;
     height: 300px; /* Default height for larger screens */
     max-height: 100%; /* Maximum height relative to the viewport height */
+
+    font-size: 25px;
 }
+
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
@@ -71,6 +74,8 @@
 
     text-align: center;
     padding: 100px 20px;
+
+    font-size: 25px;
 }
 
 .lien1:hover,.lien2:hover,.lien3:hover {
