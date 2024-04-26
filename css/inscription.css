@@ -14,6 +14,7 @@
 
 /* Styles for the input fields */
 .formulaire_inscription input[type="text"],
+.formulaire_inscription input[type="email"],
 .formulaire_inscription input[type="password"],
 .formulaire_inscription input[type="date"],
 .formulaire_inscription input[type="submit"] {
