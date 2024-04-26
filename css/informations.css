@@ -39,5 +39,6 @@ section {
     background-image: linear-gradient(to left, indigo, blue, green, orange, red);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: none;
 
 }
