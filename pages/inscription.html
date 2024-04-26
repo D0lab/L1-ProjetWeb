@@ -43,7 +43,7 @@
                     <div id="d1">
                         <form name="inscription" action="javascript:sendMail();">
                             <input type="text" id ="nom" name="nom" placeholder="Prénom Nom" size="35" style="height:35px" maxlength="36" required><br><br>
-                            <input type="text" id ="mail_utilisateur" name="mail_utilisateur" placeholder="Adresse Mail" size="35" style="height:35px" maxlength="36" required><br><br>
+                            <input type="email" id="mail_utilisateur" placeholder="Adresse Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="35" style="height:35px" required /><br><br>
                             <input type="password" id ="mdp" name="mdp" placeholder="Mot De Passe" size="35" style="height:35px" maxlength="36" required><br><br>
                             <label for="date_naissance">DATE DE NAISSANCE :</label><br>            
                             <input type="date" id ="date_naissance" name="date_naissance" placeholder="Date De Naissance" size="10%" style="height:35px" maxlength="4" required><br><br><br>
