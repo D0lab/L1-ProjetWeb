@@ -39,7 +39,7 @@
     font-size: 25px;
     text-align: center;
     padding-left: 0;
-    margin: auto; /* Ajout de la propriété margin */
+    margin: auto;
 }
 
 .donnees li {
