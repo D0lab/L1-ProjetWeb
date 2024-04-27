@@ -1,0 +1,25 @@
+/* Styles for the inscription form */
+.formulaire_inscription {
+    background-color: #D3D3D3;
+    width: 100%; /* Utiliser toute la largeur disponible */
+    max-width: 500px; /* Limiter la largeur pour une meilleure lisibilité */
+    padding: 2%;
+    border: dotted;
+    margin-top: 20px; /* Espacement du haut */
+    margin-bottom: 20px; /* Espacement du bas */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur */
+    text-align: center;
+    margin: auto; /* Centre la div horizontalement */
+}
+
+/* Styles for the input fields */
+.formulaire_inscription input[type="text"],
+.formulaire_inscription input[type="email"],
+.formulaire_inscription input[type="password"],
+.formulaire_inscription input[type="date"],
+.formulaire_inscription input[type="submit"] {
+    width: 90%; /* Largeur relative */
+    max-width: 100%; /* Largeur maximale de 100% */
+    height: 35px; /* Hauteur des champs */
+    margin-bottom: 10px; /* Espacement entre les champs */
+}
