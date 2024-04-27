@@ -25,14 +25,14 @@ body{
 
 }
 
-/* Styles for the header */
+
 header {
     color: rgb(255, 255, 255);
     background-color: #333;
     opacity: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Change from center to space-between */
+    justify-content: space-between; 
     position: sticky;
     left: 0;
     right: 0;
@@ -41,17 +41,17 @@ header {
     font-family: 'Kluva';
 }
 
-/* Styles for the logo image */
+
 header img {
     width: 100px;
-    padding: 10px 20px; /* Add padding to the left and right */
+    padding: 10px 20px;
 }
 
 
 .menu a.menu {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrer horizontalement */
+    justify-content: center;
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
@@ -71,7 +71,7 @@ header img {
 
 
 
-/* Styles for the navigation menu */
+
 nav {
     display: flex;
     align-items: center;
@@ -93,28 +93,28 @@ nav ul.menu li.menu:nth-child(-n+4) {
 
 nav ul.menu li.menu a.menu {
     text-decoration: none;
-    color: #ffffff; /* Modifier la couleur en blanc */
+    color: #ffffff;
     font-size: 25px;
 }
 
 
 
 a.menu:hover {
-    color: #ffffff; /* Modifier la couleur en blanc */
+    color: inherit;
 }
 
 a.menu:active {
-    color: #ffffff; /* Modifier la couleur en blanc */
+    color: inherit;
 }
 
-/* Styles for the main content */
+
 main {
     font-family: 'Kluva';
     flex-grow: 1;
     width: 100%;
 }
 
-/* Styles for the footer */
+
 footer {
     text-align: center;
     background-color: #333;
@@ -136,15 +136,15 @@ a:visited  {
     color : inherit;
 }
 
-/* Styles for the wrapper */
+
 .wrapper {
     min-height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Add this line to prevent content from overflowing */
+    overflow: hidden;
 }
 
-/* Responsive styles */
+
 @media (max-width: 750px) {
     ul.menu {
         flex-direction: column;

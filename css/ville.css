@@ -33,48 +33,40 @@
     background-color: rgba(255,255,255,0.5) !important;
 }
 
+
 .donnees ul {
     list-style-type: none;
     font-size: 25px;
-    justify-content: left;
-    padding-left: 0; /* Remove default padding */
+    text-align: center;
+    padding-left: 0;
+    margin: auto; /* Ajout de la propriété margin */
 }
 
 .donnees li {
     margin: 3% auto;
-    padding: 10px; /* Add padding to the li elements */
-    align-items: center; /* Align items vertically */
-    position: relative; /* Make li a positioned parent */
-
-    
+    padding: 10px; 
+    align-items: center; 
+    position: relative; 
     background-color: #D3D3D3;
-    width: 100%; /* Utiliser toute la largeur disponible */
-    max-width: 500px; /* Limiter la largeur pour une meilleure lisibilité */
+    width: 100%; 
+    max-width: 500px; 
     padding: 2%;
-
     border: solid #333;
-    margin-top: 2%; /* Espacement du haut */
-    margin-bottom: 2%; /* Espacement du bas */
-
-    box-sizing: border-box; /* Inclure les paddings dans la largeur */
+    margin : 2% auto;
+    box-sizing: border-box;
     text-align: center;
 }
 
+
+
 .donnees li > p {
     font-size: 20px;
-    margin: 0; /* Remove default margin for p */
+    margin: 0;
 }
 
 .donnees li > i {
-    margin-right: 10px; /* Increase margin between icon and text */
+    margin-right: 10px; 
 }
 
 
 
-
-@media (max-width: 767px) {
-    /* Pour les appareils mobiles */
-    .donnees {
-        padding-left: 0; /* Réinitialiser le padding gauche */
-    }
-}
