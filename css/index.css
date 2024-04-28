@@ -11,38 +11,38 @@
     0 2px black;
     text-align: center;
     padding: 100px 20px;
-    height: 300px; /* Default height for larger screens */
-    max-height: 100%; /* Maximum height relative to the viewport height */
+    height: 300px;
+    max-height: 100%;
 
     font-size: 25px;
 }
 
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
     .bandeau {
-        padding: 50px 10px; /* Decrease padding for smaller screens */
-        height: 200px; /* Adjusted height for smaller screens */
+        padding: 50px 10px;
+        height: 200px;
     }
 }
 
-/* Adjustments for even smaller screens */
+
 @media (max-width: 480px) {
     .bandeau {
-        padding: 30px 5px; /* Further decrease padding for very small screens */
-        height: 150px; /* Further adjusted height for very small screens */
+        padding: 30px 5px;
+        height: 150px;
     }
 }
 
 
 .carte {
-    max-width: 800px; /* Taille maximale pour l'iframe */
-    margin: 0 auto; /* Pour centrer l'élément horizontalement */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .carte iframe {
-    width: 100%; /* Pour occuper toute la largeur disponible dans le conteneur */
-    height: 500px; /* Taille moyenne de l'iframe, ajustez selon vos besoins */
+    width: 100%;
+    height: 500px;
     display: block; 
     margin: 0 auto;
 }
@@ -52,7 +52,7 @@
     }
 }
 
-/* Ajustements pour les écrans de petite taille (téléphones) */
+
 @media (max-width: 576px) {
     .carte iframe {
         height: 200px;
@@ -61,8 +61,8 @@
   
 
 .lien1,.lien2,.lien3 {
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le div */
-    background-position: center; /* Position de l'image centree */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat; 
 
     color: #d3d3d3;
@@ -105,7 +105,7 @@
     background-image: url('../images/centreville/resto.jpg');
 }
 
-/* Styles généraux pour les avis */
+
 .avis {
     display: flex;
     flex-wrap: wrap;

@@ -32,7 +32,7 @@ main a:visited {
 }
 
 section {
-    background-color: #D3D3D3;
+    background-color: rgba(200, 200, 200, 0.7);
 }
 
 .kdo {

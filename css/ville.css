@@ -29,25 +29,44 @@
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #696969 !important;
 }
 
+.accordion-item {
+    background-color: rgba(255,255,255,0.5) !important;
+}
+
+
 .donnees ul {
-    list-style-type: none ;
-
+    list-style-type: none;
     font-size: 25px;
-
-    justify-content: left;
+    text-align: center;
+    padding-left: 0;
+    margin: auto;
 }
 
 .donnees li {
     margin: 3% auto;
+    padding: 10px; 
+    align-items: center; 
+    position: relative; 
+    background-color: #D3D3D3;
+    width: 100%; 
+    max-width: 500px; 
+    padding: 2%;
+    border: solid #333;
+    margin : 2% auto;
+    box-sizing: border-box;
+    text-align: center;
 }
+
+
 
 .donnees li > p {
     font-size: 20px;
+    margin: 0;
 }
 
-@media (max-width: 767px) {
-    /* Pour les appareils mobiles */
-    .donnees {
-        padding-left: 0; /* Réinitialiser le padding gauche */
-    }
+.donnees li > i {
+    margin-right: 10px; 
 }
+
+
+

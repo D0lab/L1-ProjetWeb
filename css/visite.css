@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 *,
 *::before,
@@ -32,9 +31,9 @@ section h2 {
 
 
 li.timeline {
-  border-bottom: 1px solid #333; /* Ajoute une bordure en bas */
-  border-right: 1px solid #333; /* Ajoute une bordure à droite */
-  border-left: 1px solid #333; /* Ajoute une bordure à gauche */
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
 }
 
 ul.timeline {
@@ -50,7 +49,7 @@ ul.timeline {
   margin-inline: auto;
 }
 
-/* line */
+
 ul.timeline::before {
   content: "";
   grid-column: 1;
@@ -59,14 +58,12 @@ ul.timeline::before {
   border-radius: calc(var(--line-w) / 2);
 }
 
-/* columns*/
 
-/* row gaps */
 ul.timeline li.timeline:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
-/* card */
+
 ul.timeline li.timeline {
   grid-column: 2;
   --inlineP: 1.5rem;
@@ -74,9 +71,12 @@ ul.timeline li.timeline {
   grid-row: span 2;
   display: grid;
   grid-template-rows: min-content min-content min-content;
+
+  
+  background-color: #D3D3D3;
 }
 
-/* date */
+
 ul.timeline li.timeline .date {
   --dateH: 3rem;
   height: var(--dateH);
@@ -96,7 +96,7 @@ ul.timeline li.timeline .date {
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
 
-/* date flap */
+
 ul.timeline li.timeline .date::before {
   content: "";
   width: var(--inlineP);
@@ -110,7 +110,7 @@ ul.timeline li.timeline .date::before {
   right: 0;
 }
 
-/* circle */
+
 ul.timeline li.timeline .date::after {
   content: "";
   position: absolute;
@@ -123,9 +123,10 @@ ul.timeline li.timeline .date::after {
 
   transform: translate(50%, -50%);
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+
 }
 
-/* title descr */
+
 ul.timeline li.timeline .title,
 ul.timeline li.timeline .descr {
   background: var(--bgColor);
@@ -143,7 +144,7 @@ ul.timeline li.timeline .descr {
   font-weight: 300;
 }
 
-/* shadows */
+
 ul.timeline li.timeline .title::before,
 ul.timeline li.timeline .descr::before {
   content: "";
@@ -179,7 +180,7 @@ ul.timeline li.timeline .descr::before {
     grid-column: 3;
   }
 
-  /* start second card */
+  
   ul.timeline li.timeline:nth-child(2) {
     grid-row: 2/4;
   }
