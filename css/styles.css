@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Kluvka';
-    src: url('./fonts/Klukva_version_01.otf');
+    font-family: 'Verdana';
+    src: url('../fonts/verdana.ttf');
 }
 
 section {
@@ -20,6 +20,8 @@ body{
 
     z-index: 0;
 
+    font-family: 'Verdana' !important;
+
     
     background: linear-gradient(#34e89e, #08729c) !important;
 
@@ -38,7 +40,6 @@ header {
     right: 0;
     top: 0;
     z-index: 20;
-    font-family: 'Kluva';
 }
 
 
@@ -109,7 +110,6 @@ a.menu:active {
 
 
 main {
-    font-family: 'Kluva';
     flex-grow: 1;
     width: 100%;
 }
@@ -124,7 +124,6 @@ footer {
     width: 100%;
     z-index: 10;
     flex-shrink: 0;
-    font-family: 'Kluva';
 }
 
 footer a {
